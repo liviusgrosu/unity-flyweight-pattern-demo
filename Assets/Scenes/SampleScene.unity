@@ -205,7 +205,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 39342404}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2013556885}
+        m_TargetAssemblyTypeName: SpawnDragonUI, Assembly-CSharp
+        m_MethodName: SpawnBlueDragon
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &39342404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -550,7 +562,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &689733546
 GameObject:
@@ -901,7 +913,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1285766683
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1018,36 +1030,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1485457415}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1765854650
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1765854651}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1765854651
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1765854650}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25.000042, y: 0, z: -24.998875}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1944232883
 GameObject:
   m_ObjectHideFlags: 0
@@ -1238,7 +1220,7 @@ RectTransform:
   - {fileID: 62301121}
   - {fileID: 1285766683}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1659,125 +1641,3 @@ Transform:
   m_Father: {fileID: 503368669}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &6708932682052632566
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 6708932682120379640, guid: 73dbce76ec13dda40b2c0ed47dc3a33b, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6708932682120379640, guid: 73dbce76ec13dda40b2c0ed47dc3a33b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 5.93
-      objectReference: {fileID: 0}
-    - target: {fileID: 6708932682120379640, guid: 73dbce76ec13dda40b2c0ed47dc3a33b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.128
-      objectReference: {fileID: 0}
-    - target: {fileID: 6708932682120379640, guid: 73dbce76ec13dda40b2c0ed47dc3a33b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -6.96
-      objectReference: {fileID: 0}
-    - target: {fileID: 6708932682120379640, guid: 73dbce76ec13dda40b2c0ed47dc3a33b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.9238793
-      objectReference: {fileID: 0}
-    - target: {fileID: 6708932682120379640, guid: 73dbce76ec13dda40b2c0ed47dc3a33b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6708932682120379640, guid: 73dbce76ec13dda40b2c0ed47dc3a33b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.3826841
-      objectReference: {fileID: 0}
-    - target: {fileID: 6708932682120379640, guid: 73dbce76ec13dda40b2c0ed47dc3a33b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6708932682120379640, guid: 73dbce76ec13dda40b2c0ed47dc3a33b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6708932682120379640, guid: 73dbce76ec13dda40b2c0ed47dc3a33b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 315
-      objectReference: {fileID: 0}
-    - target: {fileID: 6708932682120379640, guid: 73dbce76ec13dda40b2c0ed47dc3a33b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6708932682120379644, guid: 73dbce76ec13dda40b2c0ed47dc3a33b, type: 3}
-      propertyPath: m_Name
-      value: Blue Dragon
-      objectReference: {fileID: 0}
-    - target: {fileID: 6708932682120379644, guid: 73dbce76ec13dda40b2c0ed47dc3a33b, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 73dbce76ec13dda40b2c0ed47dc3a33b, type: 3}
---- !u!1001 &8967576537073461941
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 8967576537640178886, guid: aed2d795696f9354892f4d3c28e3bafd, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8967576537640178886, guid: aed2d795696f9354892f4d3c28e3bafd, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -6.77
-      objectReference: {fileID: 0}
-    - target: {fileID: 8967576537640178886, guid: aed2d795696f9354892f4d3c28e3bafd, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.128
-      objectReference: {fileID: 0}
-    - target: {fileID: 8967576537640178886, guid: aed2d795696f9354892f4d3c28e3bafd, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -6.96
-      objectReference: {fileID: 0}
-    - target: {fileID: 8967576537640178886, guid: aed2d795696f9354892f4d3c28e3bafd, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.92387986
-      objectReference: {fileID: 0}
-    - target: {fileID: 8967576537640178886, guid: aed2d795696f9354892f4d3c28e3bafd, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8967576537640178886, guid: aed2d795696f9354892f4d3c28e3bafd, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.38268277
-      objectReference: {fileID: 0}
-    - target: {fileID: 8967576537640178886, guid: aed2d795696f9354892f4d3c28e3bafd, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8967576537640178886, guid: aed2d795696f9354892f4d3c28e3bafd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8967576537640178886, guid: aed2d795696f9354892f4d3c28e3bafd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 45
-      objectReference: {fileID: 0}
-    - target: {fileID: 8967576537640178886, guid: aed2d795696f9354892f4d3c28e3bafd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8967576537640178906, guid: aed2d795696f9354892f4d3c28e3bafd, type: 3}
-      propertyPath: m_Name
-      value: Dragon Minion
-      objectReference: {fileID: 0}
-    - target: {fileID: 8967576537640178906, guid: aed2d795696f9354892f4d3c28e3bafd, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: aed2d795696f9354892f4d3c28e3bafd, type: 3}
