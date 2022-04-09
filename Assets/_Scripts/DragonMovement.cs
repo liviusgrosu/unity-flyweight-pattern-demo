@@ -5,6 +5,7 @@ using UnityEngine;
 public class DragonMovement : MonoBehaviour
 {
     public static float speed = 5.0f;
+    public GameObject model; 
     private Rigidbody rb;
 
     private void Awake()
@@ -15,5 +16,6 @@ public class DragonMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        model.transform.rotation = Quaternion.LookRotation(rb.velocity) ;
     }
 }
