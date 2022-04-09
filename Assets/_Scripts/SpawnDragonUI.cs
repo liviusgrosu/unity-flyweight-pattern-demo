@@ -18,6 +18,7 @@ public class SpawnDragonUI : MonoBehaviour
 
     public void SpawnRedDragon(int amount)
     {
+        // Spawn red dragon(s)
         for(int i = 0; i < amount; i++)
         {
             Instantiate(RedDragonPrefab, GetRandomSpawnLocation(), RedDragonPrefab.transform.rotation);
@@ -26,6 +27,7 @@ public class SpawnDragonUI : MonoBehaviour
 
     public void SpawnBlueDragon(int amount)
     {
+        // Spawn blue dragon(s)
         for(int i = 0; i < amount; i++)
         {
             Instantiate(BlueDragonPrefab, GetRandomSpawnLocation(), BlueDragonPrefab.transform.rotation);
@@ -34,11 +36,9 @@ public class SpawnDragonUI : MonoBehaviour
 
     private Vector3 GetRandomSpawnLocation()
     {
+        // Get random spawn location within the given area
         float randomX = Random.Range(-spawnAreaBoundX, spawnAreaBoundX);
         float randomZ = Random.Range(-spawnAreaBoundZ, spawnAreaBoundZ);
-
-        Debug.Log($"{randomX}, {randomZ}");
-
         return new Vector3(randomX, 0f, randomZ);
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DragonMovement : MonoBehaviour
 {
-    public static float speed = 5.0f;
+    public static float speed = 10.0f;
     public GameObject model; 
     private Rigidbody rb;
 
@@ -16,6 +16,9 @@ public class DragonMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        // Make speed a constant
+        rb.velocity = rb.velocity.normalized * speed;
+        // Look towards forward
         model.transform.rotation = Quaternion.LookRotation(rb.velocity) ;
     }
 }
