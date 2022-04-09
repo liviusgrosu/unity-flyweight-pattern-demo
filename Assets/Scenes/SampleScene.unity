@@ -1239,7 +1239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f81a9912984d0b94b9f34cc747781979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RedDragonPrefab: {fileID: 8967576537640178906, guid: aed2d795696f9354892f4d3c28e3bafd, type: 3}
+  RedDragonPrefab: {fileID: 6708932682120379644, guid: f97a48119885a0f42bd30163764e2dd7, type: 3}
   BlueDragonPrefab: {fileID: 6708932682120379644, guid: 73dbce76ec13dda40b2c0ed47dc3a33b, type: 3}
   SpawnArea: {fileID: 2127589174}
 --- !u!1 &2048621789

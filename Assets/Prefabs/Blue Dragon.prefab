@@ -88,6 +88,7 @@ GameObject:
   - component: {fileID: 2299368971595299748}
   - component: {fileID: 3622148690873885906}
   - component: {fileID: 3507856555846893335}
+  - component: {fileID: 7760296380472689440}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -188,7 +189,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02a5f359d68b93f4496c2fee7f77a72f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: 0
+--- !u!114 &7760296380472689440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5933902355093101394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a628ae672f149844a623b8ff1b13c77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HealthBarSlider: {fileID: 6344655064389740228}
+  Dragon: {fileID: 4974303371309158443}
 --- !u!1 &6342700929783461322
 GameObject:
   m_ObjectHideFlags: 0
@@ -288,11 +302,11 @@ GameObject:
   m_Component:
   - component: {fileID: 6708932682120379640}
   - component: {fileID: 6708932682120379642}
-  - component: {fileID: 6708932682120379645}
   - component: {fileID: 6708932682120379643}
+  - component: {fileID: 4974303371309158443}
   m_Layer: 0
   m_Name: Blue Dragon
-  m_TagString: Untagged
+  m_TagString: Dragon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -329,19 +343,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
---- !u!114 &6708932682120379645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6708932682120379644}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfb8fc467c368b14aace1907de125ac0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  model: {fileID: 5898452633536456789}
 --- !u!135 &6708932682120379643
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -355,6 +356,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.67
   m_Center: {x: 0, y: 1.59, z: 0}
+--- !u!114 &4974303371309158443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6708932682120379644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdbddf69cfaa6ee41bc5a70112fd120f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentHealth: 0
+  model: {fileID: 5898452633536456789}
+  type: 1
 --- !u!1 &7967998281586129707
 GameObject:
   m_ObjectHideFlags: 0
