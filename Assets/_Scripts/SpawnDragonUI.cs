@@ -41,4 +41,12 @@ public class SpawnDragonUI : MonoBehaviour
         float randomZ = Random.Range(-spawnAreaBoundZ, spawnAreaBoundZ);
         return new Vector3(randomX, 0f, randomZ);
     }
+
+    public void ClearAll()
+    {
+        GameObject[] dragons = GameObject.FindGameObjectsWithTag("Dragon");   
+        foreach (GameObject dragon in dragons) {
+            Destroy(dragon);
+        }
+    }
 }
